@@ -1,0 +1,14 @@
+.header {
+    background-color: var(--hader-bg-cl);
+    border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}

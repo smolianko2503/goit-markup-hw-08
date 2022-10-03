@@ -1,0 +1,14 @@
+:root {
+  /* Fonts */
+  --main-font: Roboto, sans-serif;
+  --secondary-font: raleway, sans-serif;
+  /* Text colors */
+  --main-txt-cl: #212121;
+  --accent-txt-cl: #2196f3;
+  --gray-txt-cl: #757575;
+  --white-txt-cl: #ffffff;
+  /* Backgrounds colors */
+  --main-bg-cl: #2f303a;
+  --hader-bg-cl: #ffffff;
+  /* Others */
+}/*# sourceMappingURL=vars.css.map */
