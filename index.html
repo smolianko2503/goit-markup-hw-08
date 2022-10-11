@@ -32,7 +32,7 @@
               <a class="nav-link" href=""><span class="nav-link-studio">Студія</span></a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-link" href="./portfolio.html">Портфоло</a>
+              <a class="nav-link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav-list-item">
               <a class="nav-link" href="">Контакти</a>
@@ -56,6 +56,17 @@
             >
           </li>
         </ul>
+
+        <button
+          class="menu__btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./image/icons.svg#mobile-menu-40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -95,7 +106,7 @@
                 Завдання, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="characteristic-list__item">
+            <li class="characteristic__list-item">
               <div class="characteristic__list-icon">
                 <svg class="characteristic__icon" width="70" height="70">
                   <use href="./image/icons.svg#diagram"></use>
@@ -107,7 +118,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="characteristic-list__item">
+            <li class="characteristic__list-item">
               <div class="characteristic__list-icon">
                 <svg class="characteristic__icon" width="70" height="70">
                   <use href="./image/icons.svg#astronaut"></use>
@@ -131,6 +142,9 @@
               <div class="work__thumb">
                 <img
                   class="work__jpg"
+                  srcset="./image/work/img_1_370.jpg 370w, ./image/work/img_1_740.jpg 740w"
+                  sizes="(min-width: 1200px) 270px,
+                  100vw"
                   src="./image/img-1.jpg"
                   alt="Розробка"
                   width="370"
@@ -145,6 +159,9 @@
               <div class="work__thumb">
                 <img
                   class="work__jpg"
+                  srcset="./image/work/img_2_370.jpg 370w, ./image/work/img_2_740.jpg 740w"
+                  sizes="(min-width: 1200px) 270px,
+                  100vw"
                   src="./image/img-2.jpg"
                   alt="Оформлення"
                   width="370"
@@ -159,6 +176,9 @@
               <div class="work__thumb">
                 <img
                   class="work__jpg"
+                  srcset="./image/work/img_3_370.jpg 370w, ./image/work/img_3_740.jpg 740w"
+                  sizes="(min-width: 1200px) 270px,
+                  100vw"
                   src="./image/img-3.jpg"
                   alt="Підбір кольорів"
                   width="370"
@@ -180,8 +200,19 @@
             <li class="team__list-item">
               <img
                 class="team__jpg"
+                srcset="
+                  ./image/team/img1-270.jpg 270w,
+                  ./image/team/img1-354.jpg 354w,
+                  ./image/team/img1-480.jpg 480w,
+                  ./image/team/img1-540.jpg 540w,
+                  ./image/team/img1-708.jpg 708w,
+                  ./image/team/img1-960.jpg 960
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 480px, 
+                100vw"
                 src="./image/img-4.jpg"
-                alt="Ігор Дем'яненко"
+                alt="Ігор
+              Дем'яненко"
                 width="270"
                 height="260"
               />
@@ -250,6 +281,16 @@
             <li class="team__list-item">
               <img
                 class="team__jpg"
+                srcset="
+                  ./image/team/img2-270.jpg 270w,
+                  ./image/team/img2-354.jpg 354w,
+                  ./image/team/img2-480.jpg 480w,
+                  ./image/team/img2-540.jpg 540w,
+                  ./image/team/img2-708.jpg 708w,
+                  ./image/team/img2-960.jpg 960
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 480px, 
+                100vw"
                 src="./image/img-5.jpg"
                 alt="Ольга Рєпіна"
                 width="270"
@@ -321,6 +362,16 @@
             <li class="team__list-item">
               <img
                 class="team__jpg"
+                srcset="
+                  ./image/team/img3-270.jpg 270w,
+                  ./image/team/img3-354.jpg 354w,
+                  ./image/team/img3-480.jpg 480w,
+                  ./image/team/img3-540.jpg 540w,
+                  ./image/team/img3-708.jpg 708w,
+                  ./image/team/img3-960.jpg 960
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 480px, 
+                100vw"
                 src="./image/img-6.jpg"
                 alt="Микола Тарасов"
                 width="270"
@@ -391,6 +442,16 @@
             <li class="team__list-item">
               <img
                 class="team__jpg"
+                srcset="
+                  ./image/team/img4-270.jpg 270w,
+                  ./image/team/img4-354.jpg 354w,
+                  ./image/team/img4-480.jpg 480w,
+                  ./image/team/img4-540.jpg 540w,
+                  ./image/team/img4-708.jpg 708w,
+                  ./image/team/img4-960.jpg 960
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 480px, 
+                100vw"
                 src="./image/img-7.jpg"
                 alt="Михайло Єрмаков"
                 width="270"
@@ -717,6 +778,57 @@
         </form>
       </div>
     </div>
+
+    <!-- mobile-menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu__icon" width="40" height="40">
+          <use href="./image/icons.svg#mobile-close-40px"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li><a href="" class="link">Студія</a></li>
+        <li><a href="" class="link">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+      </ul>
+
+      <ul class="mobile-menu-contacts list">
+        <li><a href="" class="link">+38 096 111 11 11</a></li>
+        <li><a href="" class="link">info@devstudio.com</a></li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li>
+          <a href="" class="mobile-socials-link link"
+            >Instagram
+            <span class="mobile-socials-link-stick"></span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="link"
+            >Twitter
+            <span class="mobile-socials-link-stick"></span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="link"
+            >Facebook
+            <span class="mobile-socials-link-stick"></span>
+          </a>
+        </li>
+        <li><a href="" class="link">LinkedIn</a></li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

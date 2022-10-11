@@ -1,48 +1,74 @@
 .characteristic {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
+  }
 }
 
 .characteristic__title {
-    display: none;
+  display: none;
 }
 
 .characteristic__list {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 30px;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .characteristic__list-item {
-    width: 270px;
+  flex-basis: calc((100% - var(--indent) * (var(--items1) - 1)) / var(--items1));
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - var(--indent) * (var(--items2) - 1)) / var(--items2));
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - var(--indent) * (var(--items4) - 1)) / var(--items4));
+  }
 }
 
 .characteristic__list-icon {
-    width: 270px;
-    height: 120px;
-    background-color: #f5f4fa;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .characteristic__undertitle {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 10px;
+  @media screen and (max-width: 767.5px) {
+    text-align: center;
+  }
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .characteristic__subtitle {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: var(--gray-txt-cl);
-    margin: 0;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--gray-txt-cl);
+  margin: 0;
 }

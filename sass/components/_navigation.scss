@@ -1,73 +1,80 @@
 .main-nav {
-    margin-right: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
 }
 
 .nav-list {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
 
 .nav-list,
 .contacts-list {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .nav-link {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-    color: var(--main-txt-cl);
-    padding: 0;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+  padding: 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-list-item {
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
 }
 
 .nav-link,
 .contacts-link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .nav-link {
-    &:hover,
-        &:focus {
-            color: var(--accent-txt-cl);
-        }
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
 }
 
-
-
 .nav-link-studio {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-    color: var(--accent-txt-cl);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--accent-txt-cl);
 }
 
 .nav-list-item {
-    position: relative;
+  position: relative;
 }
 
-        .nav-link-studio{
-                
-                &::after {
-                content: '';
-                display: inline-block;
-                position: absolute;
-                width: 100%;
-                height: 4px;
-                bottom: -1px;
-                left: 0;
-                background-color: #2196f3;
-                border-radius: 2px;}
-
+.nav-link-studio {
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -1px;
+    left: 0;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
 }
