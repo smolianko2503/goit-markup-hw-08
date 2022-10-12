@@ -20,29 +20,25 @@
 }
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
-  padding: 0;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  // padding: 0;
 
-.nav-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: block;
-}
-
-.nav-link {
   &:hover,
   &:focus {
     color: var(--accent-txt-cl);
   }
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link-studio {

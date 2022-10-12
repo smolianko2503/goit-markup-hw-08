@@ -61,7 +61,9 @@
 
 .mobile-menu-item {
   display: block;
-  margin-bottom: 32px;
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .mobile-menu .link {
@@ -111,7 +113,6 @@
   align-items: baseline;
   margin-top: 64px;
   align-items: center;
-  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
@@ -119,9 +120,8 @@
   color: #2196f3;
 }
 
-.mobile-socials-item {
-  margin-right: 10px;
-  margin-left: 10px;
+.mobile-socials-item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .mobile-socials-item:not(:last-child)::after {

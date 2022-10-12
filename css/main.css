@@ -182,13 +182,15 @@ img {
 }
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
-  padding: 0;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -196,13 +198,6 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.nav-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: block;
-}
-
 .nav-link:hover, .nav-link:focus {
   color: var(--accent-txt-cl);
 }
@@ -241,12 +236,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
+  margin: 0;
 }
 @media screen and (min-width: 768px) and (max-width: 1199.5px) {
   .contacts-list {
     display: block;
-    margin-top: auto;
-    margin-bottom: auto;
   }
 }
 
@@ -257,9 +251,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--gray-txt-cl);
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -282,6 +274,12 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199.5px) {
   .contacts-link {
     display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -387,6 +385,8 @@ img {
 
 .mobile-menu-item {
   display: block;
+}
+.mobile-menu-item:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -443,9 +443,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
@@ -453,9 +450,8 @@ img {
   color: #2196f3;
 }
 
-.mobile-socials-item {
-  margin-right: 10px;
-  margin-left: 10px;
+.mobile-socials-item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .mobile-socials-item:not(:last-child)::after {
@@ -1039,6 +1035,11 @@ img {
     text-align: center;
   }
 }
+@media screen and (max-width: 767.5px) {
+  .footer-socials {
+    margin-bottom: 60px;
+  }
+}
 
 .footer-socials-title {
   font-weight: 700;
@@ -1058,11 +1059,6 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-@media screen and (max-width: 767.5px) {
-  .footer-socials-list {
-    margin-bottom: 60px;
-  }
 }
 @media screen and (max-width: 1199.5px) {
   .footer-socials-list {
